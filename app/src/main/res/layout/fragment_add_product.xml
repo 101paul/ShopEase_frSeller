@@ -1,0 +1,239 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainFragments.AddProductFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple"
+        app:title="Add Product"
+        app:titleTextColor="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="19dp"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:padding="16dp"
+            android:elevation="6dp"
+            android:clipToPadding="false">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="Please fill product details"
+                android:textColor="@color/purple"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <!-- Input Fields Start -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:boxCornerRadiusTopStart="17dp"
+                app:boxCornerRadiusTopEnd="17dp"
+                app:boxCornerRadiusBottomStart="17dp"
+                app:boxCornerRadiusBottomEnd="17dp"
+                app:boxStrokeWidth="2dp"
+                app:endIconMode="clear_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ProductTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Product Title"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Quantity & Unit -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    app:boxCornerRadiusTopStart="17dp"
+                    app:boxCornerRadiusTopEnd="17dp"
+                    app:boxCornerRadiusBottomStart="17dp"
+                    app:boxCornerRadiusBottomEnd="17dp"
+                    app:boxStrokeWidth="2dp"
+                    app:endIconMode="clear_text">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/productQuantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Quantity (1kg/1ltr)"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    app:endIconMode="dropdown_menu"
+                    app:boxCornerRadiusTopStart="17dp"
+                    app:boxCornerRadiusTopEnd="17dp"
+                    app:boxCornerRadiusBottomStart="17dp"
+                    app:boxCornerRadiusBottomEnd="17dp"
+                    app:boxStrokeWidth="2dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/unit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Unit"
+                        android:paddingStart="20dp"
+                        android:drawableTint="@color/blue" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <!-- Price & Stock -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    app:endIconMode="clear_text"
+                    app:boxCornerRadiusTopStart="17dp"
+                    app:boxCornerRadiusTopEnd="17dp"
+                    app:boxCornerRadiusBottomStart="17dp"
+                    app:boxCornerRadiusBottomEnd="17dp"
+                    app:boxStrokeWidth="2dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ProductPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Pirce"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    app:endIconMode="clear_text"
+                    app:boxCornerRadiusTopStart="17dp"
+                    app:boxCornerRadiusTopEnd="17dp"
+                    app:boxCornerRadiusBottomStart="17dp"
+                    app:boxCornerRadiusBottomEnd="17dp"
+                    app:boxStrokeWidth="2dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/noofstocks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="no of Stocks"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <!-- Category -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:endIconMode="dropdown_menu"
+                app:startIconDrawable="@drawable/category"
+                app:boxCornerRadiusTopStart="17dp"
+                app:boxCornerRadiusTopEnd="17dp"
+                app:boxCornerRadiusBottomStart="17dp"
+                app:boxCornerRadiusBottomEnd="17dp"
+                app:boxStrokeWidth="2dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/productcategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Product Category"
+                    android:paddingStart="48dp"
+                    android:drawableTint="@color/blue" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- Image Upload Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Please select pictures"
+                    android:textColor="@color/purple"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingStart="16dp" />
+
+                <ImageButton
+                    android:id="@+id/btnselectimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/addphotoalternative"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_marginEnd="16dp" />
+            </LinearLayout>
+
+            <!-- RecyclerView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvProductImage"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/listitem" />
+
+            <!-- Submit Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addproduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Add product"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:background="@drawable/addproductbutton"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/purple" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

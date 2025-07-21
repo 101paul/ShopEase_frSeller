@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_splash">
+    <fragment
+        android:id="@+id/fragment_splash"
+        android:name="com.example.adminshopeease.authentication.fragment_splash"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_fragment_splash_to_fragment_sign_in"
+            app:destination="@id/fragment_sign_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_sign_in"
+        android:name="com.example.adminshopeease.authentication.fragment_sign_in"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_fragment_sign_in_to_fragment_o_t_p"
+            app:destination="@id/fragment_o_t_p" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_o_t_p"
+        android:name="com.example.adminshopeease.authentication.fragment_o_t_p"
+        android:label="fragment_o_t_p"
+        tools:layout="@layout/fragment_o_t_p" >
+        <action
+            android:id="@+id/action_fragment_o_t_p_to_fragment_sign_in"
+            app:destination="@id/fragment_sign_in" />
+    </fragment>
+</navigation>
