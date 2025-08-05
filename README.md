@@ -1,127 +1,157 @@
-🚀 Full-Stack Android eCommerce Solution – Buyer & Seller Apps
-(This is the Seller version of the app)
-An end-to-end native Android eCommerce ecosystem, designed to deliver a seamless, real-time, and secure experience for both buyers and sellers.
+# 🚀 Full-Stack Android eCommerce Solution – Buyer & Seller Apps  
+*(This is the Seller version)*  
+**Buyer Version** 👉 [ShopEase_frBuyer](https://github.com/101paul/ShopEase_frBuyer)
 
-📱 Two Apps – One Powerful Ecosystem
-Image suggestion: Screenshot of both app launchers side by side
-This project includes two fully functional Android applications, built from the ground up:
+An end-to-end **native Android eCommerce ecosystem**, designed to deliver a seamless, real-time, and secure experience for both **buyers** and **sellers**.
 
-🛒 Buyer App – For browsing products, managing cart, placing orders, making secure payments, and tracking delivery.
+---
 
-🛍️ Seller App – For uploading products, managing stock, and processing incoming orders.
+## 📱 Two Apps – One Powerful Ecosystem
 
-🛠️ Tech Stack & Architecture
-Image suggestion: System architecture diagram
+<div align="center">
+  <img src="images/logo.png" alt="Logo" width="200" style="display: block; margin: auto;" />
+</div>
 
-Kotlin + XML – Modern, fast, and intuitive native UI development
+This project includes **two fully functional Android applications**, built from the ground up:
 
-MVVM Architecture – Clean code separation and lifecycle-aware components
+- 🛒 **Buyer App** – For browsing products, managing cart, placing orders, making secure payments, and tracking delivery  
+- 🛍️ **Seller App** – For uploading products, managing stock, and processing incoming orders  
 
-Room Database – Efficient offline access and persistent cart state
+---
 
-SharedPreferences – Lightweight local state management
+## 🛠️ Tech Stack & Architecture
 
-Firebase Realtime Database – Instant syncing of orders, stock, and product data
+<div align="center">
+  <img src="images/seller1.png" width="200" style="display: inline-block; margin:10px;"/>
+  <img src="images/seller2.png" width="200" style="display: inline-block; margin:10px;"/>
+  <img src="images/seller3.png" width="200" style="display: inline-block; margin:10px;"/>
+</div>
 
-Firebase Cloud Storage – Fast and scalable image uploads & retrieval
+- **Kotlin + XML** – Modern, fast, and intuitive native UI development  
+- **MVVM Architecture** – Clean code separation and lifecycle-aware components  
+- **Room Database** – Efficient offline access and persistent cart state  
+- **SharedPreferences** – Lightweight local state management  
+- **Firebase Realtime Database** – Instant syncing of orders, stock, and product data  
+- **Firebase Cloud Storage** – Fast and scalable image uploads & retrieval  
 
-🔐 Authentication & Security
-Image suggestion: OTP login screen from both Buyer and Seller apps
+---
 
-OTP Login via Firebase Authentication
+## 🔐 Authentication & Security
 
-Secure, passwordless access
+<div align="center">
+  <img src="images/sellerOtp1.png" width="200" style="display: inline-block; margin:10px;"/>
+  <img src="images/sellerOtp2.png" width="200" style="display: inline-block; margin:10px;"/>
+</div>
 
-Fast mobile number verification
+- **OTP Login via Firebase Authentication**
+  - Secure, passwordless access  
+  - Fast mobile number verification  
+  - Seamless onboarding for both buyers and sellers  
 
-Seamless onboarding for both buyers and sellers
+---
 
-💳 Payment Gateway Integration
-Image suggestion: Razorpay payment checkout screen
+## 🛍️ Product Management & Editing
 
-Razorpay Payment Gateway
+<div align="center">
+  <img src="images/editProduct1.png" width="200" style="display: inline-block; margin:10px;"/>
+  <img src="images/editProduct2.png" width="200" style="display: inline-block; margin:10px;"/>
+</div>
 
-Smooth and secure payment flow
+- Upload product with image, price, and stock  
+- **Edit product** title, description, price, and image  
+- Delete or update items from your live catalog  
 
-Handles multiple payment methods (UPI, cards, wallets)
+---
 
-Custom Java + Spring Boot Backend
+## 🔍 Search & Location
 
-Generates secure Razorpay order IDs
+<div align="center">
+  <img src="images/search1.png" width="200" style="display: inline-block; margin:10px;"/>
+  <img src="images/address1.png" width="200" style="display: inline-block; margin:10px;"/>
+</div>
 
-Validates and verifies payment transactions
+- Smart **search** bar to find product instantly  
+- Store **business address** in seller settings  
+- Use location for delivery reference  
 
-Protects sensitive user credentials
+---
 
-Ensures full-stack transaction integrity
+## 💳 Payment Gateway Integration
 
-⚡ Real-Time Buyer-Seller Sync
-Image suggestion: Firebase Realtime DB showing live product/order data updates
+- **Razorpay Payment Gateway**
+  - Works with Buyer App to initiate secure payments  
+  - Seller gets notified of payment status and order confirmation
 
-Live updates on:
+- **Custom Java + Spring Boot Backend**
+  - Validates and verifies payment transactions  
+  - Protects sensitive data and ensures order integrity  
 
-New orders
+---
+## 🛍️ Product Management
 
-Stock changes
+#➕ Add Product
+<div align="center"> <img src="images/addProduct1.png" width="200" style="display: inline-block; margin:10px;" /> <img src="images/addProduct2.png" width="200" style="display: inline-block; margin:10px;" /> </div>
+Add a new product with title, description, price, stock, and category
 
-Product additions or edits
+Upload up to 5 images with preview support
 
-Instant notification to buyers when orders are packed, shipped, or delivered
+Automatically updates in Firebase and visible instantly in buyer version
 
-🧠 Smart Cart & Order Management
-Image suggestion: RecyclerView cart layout with real-time updates
+Realtime validation for missing or incorrect data
 
-Real-time cart updates using Room + Firebase
+#✏️ Edit Existing Product
+<div align="center"> <img src="images/editProduct1.png" width="200" style="display: inline-block; margin:10px;" /> <img src="images/editProduct2.png" width="200" style="display: inline-block; margin:10px;" /> </div>
+Tap on any existing product to edit its details
 
-Auto-clears cart when quantity hits zero
+Modify title, description, price, stock, unit, or replace images
 
-Post-order stock deductions reflected immediately in the seller app
+Realtime updates reflect immediately for the buyer
 
-✏️ Seller Product Edit Functionality
-Image suggestion: Product Edit screen showing form with prefilled details
+Smooth, custom dialog with pre-filled current values
 
-Sellers can edit existing product details including:
 
-Product Title
+## ⚡ Real-Time Order Sync
 
-Price, Quantity, and Stock
+<div align="center">
+  <img src="images/orderUpdate1.png" width="200" style="display: inline-block; margin:10px;"/>
+  <img src="images/orderUpdate2.png" width="200" style="display: inline-block; margin:10px;"/>
+</div>
 
-Category and Units
+- Get **live notifications** when a buyer places an order  
+- Mark orders as **packed, shipped, delivered**  
+- View buyer contact & address details  
 
-Update or Replace Product Images (up to 5 per product)
+---
 
-Changes are instantly reflected in Firebase, and synced to buyers in real-time
+## ✅ Why This App Stands Out
 
-Uses custom dialogs for a seamless editing experience
+- 🔥 **Native Android development** – Fast & responsive  
+- 📐 **MVVM architecture** – Organized and scalable  
+- 🛠️ **Full-stack integration** – From UI to payment  
+- 🔐 **Secure & real-time** – Built using Firebase & Spring Boot  
+- 🚀 **Ready for production** – Smooth UX for both parties  
+- 🌐 **Cloud-powered image and data storage**  
+- 💼 **Perfect for local businesses & small sellers**  
 
-Ensures data consistency across seller, buyer, and cart views
+---
 
-✅ Why This App Stands Out
-Image suggestion: Clean UI screenshot of HomeFragment or Dashboard
+## 📦 Features At A Glance
 
-100% native Android development
+| Feature                            | Buyer App ✅ | Seller App ✅ |
+|-----------------------------------|--------------|----------------|
+| OTP Login                         | ✅           | ✅             |
+| Realtime Cart                     | ✅           |                |
+| Product Upload & Management       |              | ✅             |
+| Product Editing                   |              | ✅             |
+| Stock Management                  |              | ✅             |
+| Live Order Updates                | ✅           | ✅             |
+| Razorpay Payment Gateway          | ✅           |                |
+| Order Verification via Backend    | ✅           | ✅             |
+| Firebase Sync (Realtime + Images) | ✅           | ✅             |
+| Offline Cart Storage (Room)       | ✅           |                |
+| 🔍 Product Search (Seller App)     |              | ✅             |
+| 📍 Address Management              |              | ✅             |
 
-Clean, scalable MVVM architecture
+---
 
-Full-stack: From UI to backend payment verification
 
-Secure, real-time, and production-ready
-
-Offline support for smoother experience
-
-Ideal for launching a mobile-first eCommerce solution
-
-📦 Features At A Glance
-Image suggestion: Table-style feature comparison graphic or icons per feature
-
-Feature	Buyer App ✅	Seller App ✅
-OTP Login	✅	✅
-Realtime Cart	✅	
-Product Upload & Management		✅
-Product Edit Feature		✅
-Stock Management		✅
-Live Order Updates	✅	✅
-Razorpay Payment Gateway	✅	
-Order Verification via Backend	✅	✅
-Firebase Sync (Realtime + Images)	✅	✅
-Offline Cart Storage (Room)	✅	
