@@ -9,7 +9,7 @@ An end-to-end **native Android eCommerce ecosystem**, designed to deliver a seam
 ## 📱 Two Apps – One Powerful Ecosystem
 
 <div align="center">
-  <img src="images/logo.png" alt="Logo" width="200" style="display: block; margin: auto;" />
+  <img src="images/AdminShopEase1.png" alt="Logo" width="200" style="display: block; margin: auto;" />
 </div>
 
 This project includes **two fully functional Android applications**, built from the ground up:
@@ -22,9 +22,8 @@ This project includes **two fully functional Android applications**, built from 
 ## 🛠️ Tech Stack & Architecture
 
 <div align="center">
-  <img src="images/seller1.png" width="200" style="display: inline-block; margin:10px;"/>
-  <img src="images/seller2.png" width="200" style="display: inline-block; margin:10px;"/>
-  <img src="images/seller3.png" width="200" style="display: inline-block; margin:10px;"/>
+  <img src="images/adminShopEase1.png" width="200" style="display: inline-block; margin:10px;"/>
+  <img src="images/AdminShopEase2.png" width="200" style="display: inline-block; margin:10px;"/>
 </div>
 
 - **Kotlin + XML** – Modern, fast, and intuitive native UI development  
@@ -39,82 +38,44 @@ This project includes **two fully functional Android applications**, built from 
 ## 🔐 Authentication & Security
 
 <div align="center">
-  <img src="images/sellerOtp1.png" width="200" style="display: inline-block; margin:10px;"/>
-  <img src="images/sellerOtp2.png" width="200" style="display: inline-block; margin:10px;"/>
+  <img src="images/login.png" width="200" style="display: inline-block; margin:10px;"/>
+  <img src="images/login2.png" width="200" style="display: inline-block; margin:10px;"/>
 </div>
 
 - **OTP Login via Firebase Authentication**
   - Secure, passwordless access  
   - Fast mobile number verification  
-  - Seamless onboarding for both buyers and sellers  
-
----
-
-## 🛍️ Product Management & Editing
-
+  - Seamless onboarding for both buyers and sellers
+  - 
 <div align="center">
-  <img src="images/editProduct1.png" width="200" style="display: inline-block; margin:10px;"/>
-  <img src="images/editProduct2.png" width="200" style="display: inline-block; margin:10px;"/>
+  <img src="images/otpsending.png" width="200" style="display: inline-block; margin:10px;"/>
+  <img src="images/otpverification.png" width="200" style="display: inlineblock;margin:10px;"/>
 </div>
-
-- Upload product with image, price, and stock  
-- **Edit product** title, description, price, and image  
-- Delete or update items from your live catalog  
-
 ---
 
-## 🔍 Search & Location
-
-<div align="center">
-  <img src="images/search1.png" width="200" style="display: inline-block; margin:10px;"/>
-  <img src="images/address1.png" width="200" style="display: inline-block; margin:10px;"/>
-</div>
-
-- Smart **search** bar to find product instantly  
-- Store **business address** in seller settings  
-- Use location for delivery reference  
-
----
-
-## 💳 Payment Gateway Integration
-
-- **Razorpay Payment Gateway**
-  - Works with Buyer App to initiate secure payments  
-  - Seller gets notified of payment status and order confirmation
-
-- **Custom Java + Spring Boot Backend**
-  - Validates and verifies payment transactions  
-  - Protects sensitive data and ensures order integrity  
-
----
 ## 🛍️ Product Management
 
-#➕ Add Product
-<div align="center"> <img src="images/addProduct1.png" width="200" style="display: inline-block; margin:10px;" /> <img src="images/addProduct2.png" width="200" style="display: inline-block; margin:10px;" /> </div>
+➕ Add Product
+<div align="center"> <img src="images/AdminShopEase3.png" width="200" style="display: inline-block; margin:10px;" /> 
+</div>
+
 Add a new product with title, description, price, stock, and category
-
 Upload up to 5 images with preview support
-
 Automatically updates in Firebase and visible instantly in buyer version
-
 Realtime validation for missing or incorrect data
 
-#✏️ Edit Existing Product
-<div align="center"> <img src="images/editProduct1.png" width="200" style="display: inline-block; margin:10px;" /> <img src="images/editProduct2.png" width="200" style="display: inline-block; margin:10px;" /> </div>
+✏️ Edit Existing Product
+<div align="center"> <img src="images/AdminShopEase2.png" width="200" style="display: inline-block; margin:10px;" /> <img src="images/edit.png" width="200" style="display: inline-block; margin:10px;" /> </div>
 Tap on any existing product to edit its details
-
 Modify title, description, price, stock, unit, or replace images
-
 Realtime updates reflect immediately for the buyer
-
 Smooth, custom dialog with pre-filled current values
 
 
 ## ⚡ Real-Time Order Sync
 
 <div align="center">
-  <img src="images/orderUpdate1.png" width="200" style="display: inline-block; margin:10px;"/>
-  <img src="images/orderUpdate2.png" width="200" style="display: inline-block; margin:10px;"/>
+  <img src="images/AdminShopEase4.png" width="200" style="display: inline-block; margin:10px;"/>
 </div>
 
 - Get **live notifications** when a buyer places an order  
