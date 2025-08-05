@@ -3,7 +3,9 @@
 An end-to-end **native Android eCommerce ecosystem**, designed to deliver a seamless, real-time, and secure experience for both **buyers** and **sellers**.
 
 ## 📱 Two Apps – One Powerful Ecosystem
-
+<div align="center">
+  <img src="images/AdminShopEase10.png" width="200" style="display: inline-block; margin:10px;"/>
+</div>
 This project includes **two fully functional Android applications**, built from the ground up:
 
 - 🛒 **Buyer App** – For browsing products, managing cart, placing orders, making secure payments, and tracking delivery.
@@ -12,7 +14,10 @@ This project includes **two fully functional Android applications**, built from 
 ---
 
 ## 🛠️ Tech Stack & Architecture
-
+<div align="center">
+  <img src="images/AdminShopEase1.png" width="200" style="display: inline-block; margin:10px;"/>
+  <img src="images/AdminShopEase2.png" width="200" style="display: inline-block; margin:10px;"/>
+</div>
 - **Kotlin + XML** – Modern, fast, and intuitive native UI development
 - **MVVM Architecture** – Clean code separation and lifecycle-aware components
 - **Room Database** – Efficient offline access and persistent cart state
