@@ -9,7 +9,7 @@ An end-to-end **native Android eCommerce ecosystem**, designed to deliver a seam
 ## 📱 Two Apps – One Powerful Ecosystem
 
 <div align="center">
-  <img src="images/adminShopEase1.png" alt="Logo" width="200" style="display: block; margin: auto;" />
+  <img src="images/AdminShopEase10.png" alt="Logo" width="200" style="display: block; margin: auto;" />
 </div>
 
 This project includes **two fully functional Android applications**, built from the ground up:
